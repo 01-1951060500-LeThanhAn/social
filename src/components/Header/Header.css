@@ -1,0 +1,155 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  padding: 0 10%;
+  
+  z-index: 10;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.header__left .header__title {
+  font-weight: 600;
+  color: #333;
+}
+.header__logo  {
+
+  width: 50px;
+  height: 40px;
+  position: relative;
+}
+
+.header__logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.header__search {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  flex: 0 1 auto;
+  min-width: 255px;
+  display: none;
+  width: 215px;
+  -webkit-box-flex: 0;
+  position: relative;
+}
+
+.header__search input {
+  font-size: 14px;
+  border: solid 1px rgb(235, 217, 217);
+  outline: none;
+  padding: 7px 10px 7px 26px;
+  z-index: 2;
+  color: #262626;
+  background-color: #fafafa;
+  width: 100%;
+}
+
+.header__search i.bx-search-alt-2 {
+  position: absolute;
+  z-index: 15;
+  padding-left: 10px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 5px 15px;
+  border: 1px solid transparent;
+  border-radius: 4;
+  cursor: pointer;
+}
+
+.btn-login {
+  background-color: #0095f6;
+  color: #fff;
+  transition: all 0.5s ease;
+  font-weight: 600;
+}
+
+.btn-login:hover {
+  opacity: 0.8;
+}
+
+.btn-upload {
+  margin-right: 15px;
+}
+
+.btn-upload:hover {
+  background-color: #fff !important;
+}
+
+.bx-message-square-add {
+  font-size: 1.45rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.bx-message-square-add:hover {
+  opacity: 0.8;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 74px;
+    max-width: 100%;
+ 
+    z-index: 10;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+ 
+  .header__search {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    
+    min-width: 155px;
+    display: none;
+    width: 115px;
+
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 414px) {
+ 
+
+  .header__search {
+    opacity: 0;
+  }
+
+  .btn-home {
+    opacity: 0;
+  }
+  .btn-upload {
+    padding-left: -300px;
+  }
+}
+

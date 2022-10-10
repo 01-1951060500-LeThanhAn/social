@@ -1,0 +1,183 @@
+.App {
+  background-color: #ffffff;
+  
+}
+
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(172, 145, 145);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: white;
+  z-index: 99;
+}
+
+a {
+    color: #333;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.container_main {
+  display: flex;
+  margin-top: 60px;
+}
+
+.container_main .Post__list {
+  max-width: 614px;
+  width: 60%;
+
+  margin: 40px 140px;
+}
+
+.container_main .profile{
+  width: 30%;
+  margin: 40px 160px 0 0;
+  position: fixed;
+  right: 0;
+}
+
+.card-image {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.card {
+  margin-bottom: 30px;
+}
+.card-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h2 {
+  margin: 30px;
+}
+
+.card-avatar {
+  border-radius: 50%;
+}
+
+.form__upload {
+  position: absolute;
+ 
+    width: 400px;
+    height: auto;
+    background-color: white;
+    border: 2px solid #000;
+    padding: 15px;
+}
+
+.form__signup {
+  margin: 10px auto;
+  
+}
+
+
+
+.form__group {
+  margin: 20px auto;
+}
+.form__group progress {
+  width: 100%;
+  height: 20px;
+
+}
+
+.form__group .form__field {
+  margin-top: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.btn-signup {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+  background-color: #45aaf2;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container_main {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+  }
+  .container_main .Post__list {
+    max-width: 514px;
+    width: 60%;
+    margin: 40px 50px;
+  }
+
+  .container_main .profile {
+    width: 35%;
+    margin: 40px 70px 0 0;
+    position: fixed;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container_main {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+  }
+  .container_main .Post__list {
+    max-width: 414px;
+    width: 60%;
+    margin: 40px;
+  }
+
+  .profile {
+    display: none;
+  } 
+  .container_main .Post__list {
+    max-width: 554px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container_main {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+  }
+  .container_main .Post__list {
+    max-width: 414px;
+    width: 100%;
+    margin: 40px auto;
+  }
+
+  .container_main .profile_admin {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {
+  .form__upload {
+    width: 320px;
+  }
+  .fake_account {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .form__upload {
+    width: 250px;
+  }
+}
